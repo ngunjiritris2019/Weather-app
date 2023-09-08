@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/weather.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form class="mb-3" id="city-form">
+            <input
+              type="text"
+              id="city"
+              placeholder="Search for city"
+              autofocus="on"
+            />
+            <input type="submit" id="search" value="Search" />
+            <button id="current-pin">Current Location</button>
+          </form>
+          <h2 id="city-name">Nairobi, Kenya</h2>
+          <h3><span id="temperature">17</span>°C</h3>
+          <p id="icon">☀️</p>
+          <h3>
+            H:<span id="current-HighTemp">28</span>°C L:<span
+              id="current-LowTemp"
+            >
+              33</span
+            >°C
+          </h3>
+          <div class="more-info">
+            <h3 id="date">Tuesday, 15th August 2023</h3>
+            <p>Last updated: <span id="time">23:00</span></p>
+            <p id="description">Sunny</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind: <span id="wind"></span>km/h</p>
+          </div>
+          <div class="all-week">
+            <div class="row">
+              <div class="day-one col-2">
+                <h2>Wed</h2>
+                <p>☀️</p>
+                <h3>H:26°C</h3>
+                <h4>L:12°C</h4>
+              </div>
+              <div class="day-two col-2">
+                <h2>Thur</h2>
+                <p>☁️</p>
+                <h3>H:25°C</h3>
+                <h4>L:13°C</h4>
+              </div>
+              <div class="day-three col-2">
+                <h2>Fri</h2>
+                <p>☀️</p>
+                <h3>H:30°C</h3>
+                <h4>L:10°C</h4>
+              </div>
+              <div class="day-four col-2">
+                <h2>Sat</h2>
+                <p>☀️</p>
+                <h3>H:26°C</h3>
+                <h4>L:13°C</h4>
+              </div>
+              <div class="day-five col-2">
+                <h2>Sun</h2>
+                <p>☁️</p>
+                <h3>H:24°C</h3>
+                <h4>L:14°C</h4>
+              </div>
+              <div class="day-six col-2">
+                <h2>Mon</h2>
+                <p>☀️</p>
+                <h3>H:29°C</h3>
+                <h4>L:09°C</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p><a href="">Open-source code</a> by Beatrice Ngunjiri</p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
