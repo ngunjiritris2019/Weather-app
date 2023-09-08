@@ -1,0 +1,72 @@
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.container {
+  font-family: "Urbanist", sans-serif;
+  margin-top: 20px;
+}
+.card {
+  box-shadow: 0 10px 40px rgb(10, 94, 116);
+}
+.more-info {
+  position: fixed;
+  top: 109px;
+  right: 102px;
+  line-height: 1px;
+}
+
+#city {
+  font-size: 20px;
+  padding: 10px;
+  width: 50%;
+  box-shadow: 0 10px 40px rgb(10, 94, 116);
+}
+#search {
+  color: #000000;
+  font-size: 20px;
+  background-color: #19668a;
+  border: 1px solid #19668a;
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgb(10, 94, 116);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+#search:hover {
+  color: #19668a;
+  background-color: #fff;
+}
+.forecast-container {
+  width: 100%;
+  flex-direction: column;
+}
+.custom-row {
+  flex-direction: column;
+}
+.forecast-cards {
+  width: 90%;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-size: none;
+  }
+  .container {
+    padding: 0;
+  }
+  .more-info {
+    top: 85px;
+    right: 10px;
+    font-size: 15px;
+  }
+}
